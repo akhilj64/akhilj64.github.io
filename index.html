@@ -1,0 +1,564 @@
+<html>
+	<head>
+		<title>My Template</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  		<link rel="stylesheet" href="style.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  		<script src="http://maps.googleapis.com/maps/api/js?" type="text/javascript"></script>
+<script type="text/javascript">
+        var mapOptions = {
+          center: new google.maps.LatLng(-33.45, -70.66667),
+          zoom: 11,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        jQuery(document).ready(function(){
+            map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        });
+
+</script> 
+
+	</head>
+	<body>
+	<div class = "main-content">
+	<!--====================================
+			NAVIGATION BAR
+	=====================================-->
+			<nav id = "my-nav" class="navbar navbar-default">
+  				<div class="container-fluid">
+    				<div class="navbar-header">
+      					<img class = "img-responsive " src = "images/logo.png"/>
+      					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                			<span class="sr-only">Toggle navigation</span>
+                			<span class="icon-bar"></span>
+                			<span class="icon-bar"></span>
+                			<span class="icon-bar"></span>
+            			</button>
+    				</div>
+    				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    					<ul class="my-nav nav navbar-nav navbar-right">
+      						<li class="active"><a href="#1">HOME</a></li>
+      						<li><a href="#2">ABOUT US</a></li>
+      						<li><a href="#3">SERVICES</a></li>
+      						<li><a href="#4">PORTFOLIO</a></li>
+      						<li><a href="#5">CONTACT US</a></li>
+    					</ul>
+    				</div>
+  				</div>
+			</nav>
+	<!--====================================
+			HOME PAGE COVER PIC
+	=====================================-->
+			<section class = "cover-pic page-section" id = "1">
+				<div class = "cover-text">
+					<h1>This Is My First Template</h1>
+					<h3>I am a passionate web designer</h3>
+					<button id = "explore-btn" class = "btn btn-lg">EXPLORE MORE</button>
+					<button id = "buy-btn" class = "trans-btn btn btn-lg">PURCHASE</button>
+				</div>
+			</section>
+	<!--====================================
+			ABOUT US
+	=====================================-->
+			<section class = "about-us-section page-section" id = "2">
+				<div id = "about-us" class = "container text-center">
+					<div class = "my-header">
+						<h1>ABOUT US</h1>
+						<span class = "head-border"></span>
+					</div>
+					<div class = "text-content">
+						<p>
+							There is nothing special about us.
+						</p>
+						<p>The field is considered a subset of visual communication and communication design.</p>
+					</div>
+					<div class = "my-boxes">
+						<div class = "row">
+							<div class="col-md-4">
+								<div class = "box box-one">
+									<img src = "images/user.png">
+									<h3>Test Text</h3>
+									<p>
+										The field is considered a subset of visual communication and communication design. The field is considered a subset of visual communication and communication design.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class = "box box-two">
+									<img src = "images/back.png">
+									<h3>Test Text</h3>
+									<p>
+										The field is considered a subset of visual communication and communication design. The field is considered a subset of visual communication and communication design.
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class = "box box-three">
+									<img src = "images/upload.png">
+									<h3>Test Text</h3>
+									<p>
+										The field is considered a subset of visual communication and communication design. The field is considered a subset of visual communication and communication design.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--====================================
+				FIRST PARALLAX
+			=====================================-->
+			<div class = "parallax parallax-one">
+				<div class = "cover-text">
+					<h2>
+						“Be yourself; everyone else is already taken.”
+						― Oscar Wilde
+					</h2>
+					<button class = "trans-btn parall-btn btn btn-lg">LEARN MORE</button>
+				</div>
+			</div>
+			<!--====================================
+				SERVICES
+			=====================================-->
+			<section class = "services-section page-section" id = "3">
+				<div class="container text-center">
+					<div class = "my-header">
+						<h1>OUR SERVICES</h1>
+						<span class = "head-border"></span>
+					</div>
+					<div class = "text-content">
+						<p>
+							There is nothing special about us.
+						</p>
+						<p>The field is considered a subset of visual communication and communication design.</p>
+					</div>
+					<div class = "service-boxes">
+						<div class = "row">
+							<div class = "col-md-4">
+								<img src = "images/hang-blue.png">
+								<div class = "box">
+									<p id = "head-one" class = "service-head">Test Service</p>
+									<p class = "box-text">The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.</p>
+								</div>
+							</div>
+							<div class = "col-md-4">
+								<img src = "images/hang-green.png">
+								<div class = "box">
+									<p id = "head-two" class = "service-head">Test Service</p>
+									<p class = "box-text">The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.</p>
+								</div>
+							</div>
+							<div class = "col-md-4">
+								<img src = "images/hang-orange.png">
+								<div class = "box">
+									<p id = "head-three" class = "service-head">Test Service</p>
+									<p class = "box-text">The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.The field is considered a subset of visual communication and communication design.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--====================================
+				SECOND PARALLAX
+			=====================================-->
+			<div class = "parallax parallax-two">
+				<div class = "container text-center">
+					<div class = "row">
+						<div class = "col-md-4">
+							<div class = "parallax-box">
+								<div class = "box-icon">
+								 	<img  src = "images/home.png">	
+								</div>
+								<div class = "box-head">
+									<h4>OUR TESTING</h4>
+									<span class = "box-line"></span>
+								</div>
+								<div class = "box-desc">
+									<p>The field is considered a subset of visual 
+								communication and communication design.
+								The field is considered a subset of visual 
+								communication and communication design.</p>
+								</div>
+							</div>
+						</div>
+						<div class = "col-md-4">
+							<div class = "parallax-box">
+								<div class = "box-icon">
+								 	<img src = "images/alarm.png">
+								</div>
+								<div class = "box-head">
+									<h4>OUR TESTING</h4>
+									<span class = "box-line"></span>
+								</div>
+								<div class = "box-desc">
+									<p>The field is considered a subset of visual 
+								communication and communication design.
+								The field is considered a subset of visual 
+								communication and communication design.</p>
+								</div>
+							</div>
+						</div>
+						<div class = "col-md-4">
+							<div class = "parallax-box">
+								<div class = "box-icon">
+								 	<img src = "images/gift.png">	
+								</div>
+								<div class = "box-head">
+									<h4>OUR TESTING</h4>
+									<span class = "box-line"></span>
+								</div>
+								<div class = "box-desc">
+									<p>The field is considered a subset of visual 
+								communication and communication design.
+								The field is considered a subset of visual 
+								communication and communication design.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--====================================
+				PORTFOLIO
+			=====================================-->
+			<section class = "portfolio-section page-section" id = "4">
+				<div class="container text-center">
+					<div class = "my-header">
+						<h1>PORTFOLIO</h1>
+						<span class = "head-border"></span>
+					</div>
+				
+					<div class="works-menu">
+						 <ul class = "pill-list">
+  							<li>
+  								<a class = "btn btn-success btn-sm" href = "#">All</a>
+  							</li>
+  							<li>
+  								<a class = "btn btn-default btn-sm" href = "#">FB Apps</a>
+  							</li>
+  							<li>
+  								<a class = "btn btn-default btn-sm" href = "#">Websites</a>
+  							</li>
+  							<li>
+  								<a class = "btn btn-default btn-sm" href = "#">Web Apps</a>
+  							</li>
+  							<li>
+  								<a class = "btn btn-default btn-sm" href = "#">Wordpress</a>
+  							</li>
+  							<li>
+  								<a class = "btn btn-default btn-sm" href = "#">Android Apps</a>
+  							</li>
+						</ul> 
+					</div>
+					<div class="portfolio-grid">
+						<div class="row">
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-1.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>
+							</div>
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-2.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>
+							</div>
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-3.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-4.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>					
+							</div>
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-5.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>								
+							</div>
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-6.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="row">
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-7.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>
+							</div>
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-8.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>
+							</div>
+							<div class = "col-md-4">
+								<div class = "overlay">
+									<img class = "overlay-img img-rounded img-responsive" src = "images/work-9.png"/>
+									<div class="middle">
+    									<a class="text btn btn-md" href = "#" >
+    										<span class = "glyphicon glyphicon-search"></span>
+    									</a>
+    									<h3>This is My Work</h3>
+  									</div>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</section>
+			<!--====================================
+				CONTACT US
+			=====================================-->
+			<section class = "page-section contact-us-section parallax parallax-three" id = "5">
+				<div class = "container text-center">
+					<div class = "my-header">
+						<h1>CONTACT US</h1>
+						<span class = "head-border"></span>
+					</div>
+					<div class="contact-details">
+						<div class = "row">
+							<div class = "col-md-5">
+								<div class = "text-left">
+									<h4>"Lorem Ipsum is simply dummy text of the 
+										printing and typesetting industry."
+									</h4>
+								</div>
+							</div>
+
+						</div>
+						<div class = "row">
+							<div class = "col-md-5">
+								<div class = "text-left">
+									<h3>LOCATION</h3>
+									<p>1234 City Street, Suite 250 San Kerala, CB 9076 India </p>
+									<p>Tel: +91 889 428 750, Fax: +91 889 428 750 </p>
+									<p>Email: akhilj64@gmail.com</p>
+								</div>
+							</div>
+							<div class = "col-md-6">
+								<form class = "contact-form">
+									<div class = "row">
+										<div class = "col-md-6 col-xs-6">
+											<div class = "form-group">
+												<input placeholder="Name" type = "text" class = "form-control">
+											</div>
+										</div>
+										<div class = "col-md-6 col-xs-6">
+											<div class = "form-group">
+												<input placeholder="Email" type = "text" class = "form-control">
+											</div>
+										</div>
+									</div>
+									<div class = "row">
+										<div class = "col-md-12">
+											<div class = "form-group">
+												<input placeholder="Subject" type = "text" class = "form-control">
+											</div>
+										</div>
+									</div>
+									<div class = "row">
+										<div class = "col-md-12">
+											<div class = "form-group">
+												<textarea id="message"  rows="7" placeholder="Message" class="form-control"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class = "row">
+										<div class = "col-md-2">
+											<div class = "form-group">
+												<button class = "submit btn btn btn-lg pull-left">SUBMIT</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class = "footer-section">
+				<div id="map_canvas" style="width: 100%; height: 400px;"></div>
+			</section>
+	</div>
+	<footer class = "my-footer" style = "background: black">
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-3">
+					<div class = "footer-title">
+						<h4>ABOUT TEMPLATE</h4>				
+					</div>
+					<div class = "footer-desc margin-one">
+						<p>This is a new template.Lorem 
+						Ipsum is simply dummy text of the 
+						printing and typesetting industry.</p>
+						<p>This is a new template.Lorem 
+						Ipsum is simply dummy text of the 
+						printing and typesetting industry.</p>
+					</div>
+					<div class = "social-media margin-two">
+						<div class = "footer-title">
+							<h4>FOLLOW US</h4>				
+						</div>
+						<div class = "margin-two">
+							<a class = "btn btn-sm btn-default" href = "#">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a class = "btn btn-sm btn-default" href = "#">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a class = "btn btn-sm btn-default" href = "#">
+								<i class="fa fa-google-plus"></i>
+							</a>
+							<a class = "btn btn-sm btn-default" href = "#">
+								<i class="fa fa-rss"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class = "col-md-3">
+					<div class = "tags">
+						<div class = "footer-title">
+							<h4>POPULAR TAGS</h4>				
+						</div>
+						<div class = "margin-one">
+							<a class = "btn btn-sm" href = "#">
+								<span>mytemplate</span>
+							</a>
+							<a class = "btn btn-sm" href = "#">
+								<span>bootstrap</span>
+							</a>
+							<a class = "btn btn-sm" href = "#">
+								<span>css</span>
+							</a>
+							<a class = "btn btn-sm" href = "#">
+								<span>html5</span>
+							</a>
+							<a class = "btn btn-sm" href = "#">
+								<span>jquery</span>
+							</a>
+						</div>
+					</div>
+					<div class = "quick-links margin-two">
+						<div class = "footer-title">
+							<h4>QUICK LINKS</h4>				
+						</div>
+						<div class = "margin-two">
+							<p>
+								<a href = "#">
+									Privacy
+								</a>
+							</p>
+							<p>
+								<a href = "#">
+									Terms & Conditions
+								</a>
+							</p>
+							<p>
+								<a href = "#">
+									Help Center
+								</a>
+							</p>
+							<p>
+								<a href = "#">
+									Downloads
+								</a>
+							</p>
+							<p>
+								<a href = "#">
+									Image Gallery
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class = "col-md-3">
+					<div class = "footer-title">
+						<h4>SUSBSCRIBE MY TEMPLATE</h4>
+					</div>
+					<div class = "margin-one">
+						<p>This is a new template.Lorem 
+						Ipsum is simply dummy text of the 
+						printing and typesetting industry.
+						Ipsum is simply dummy text of the 
+						printing and typesetting industry.</p>
+					</div>
+					<input type = "text" class = "form-control margin-two" placeholder="Enter Your Email">
+				</div>
+				<div class = "col-md-3">
+					<div class = "footer-title">
+						<h4>SOME DUMMY TEXT</h4>
+					</div>
+					<div class = "margin-one">
+						<p>This is a new template.Lorem 
+						Ipsum is simply dummy text of the 
+						printing and typesetting industry.
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class = "copy-right copyright-section">
+			<p>© Copyright 2018 MyTemplate. All rights reserved.</p>
+		</div>
+	</footer>
+	<script src="main.js" type="text/javascript"></script>
+</body>
+</html>

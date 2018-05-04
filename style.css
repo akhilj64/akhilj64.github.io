@@ -1,0 +1,427 @@
+body, html {
+    height: 100%;
+}
+/*=================================
+		MEDIA QUERIES(Laptop,Desktop)
+===================================*/
+@media (min-width:1025px) {
+
+#my-nav ul{
+	padding-top: 25px;
+}
+#my-nav ul>li{
+	margin-right: 45px;
+}
+#my-nav ul>li.active{
+	border-bottom: 5px solid #D50000;
+}
+.cover-text h1{
+	font-size: 65px;
+}
+.cover-text h2{
+	font-size: 40px;
+	font-family: impact;
+}
+.cover-text .btn{
+	width: 225px;
+}
+.portfolio-grid .col-md-4{
+	padding: 5px 5px 5px;
+}
+.contact-details p{
+	font-size:16px;
+}
+.contact-form .form-control{
+	height: 50px;
+}
+.text-content p{
+	font-size: 18px;
+}
+.my-header{
+	margin-top:80px;
+}
+.my-boxes, .service-boxes{
+	margin-top:60px;
+}
+.about-us-section, .services-section, .portfolio-section{
+	margin-bottom: 70px;
+}
+
+}
+/*=================================
+		MEDIA QUERIES(Mobile)
+===================================*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.my-header{
+		margin-top:40px;
+	}
+	.about-us-section, .services-section, .portfolio-section{
+		margin-bottom: 20px;
+	}
+	.parallax-one{
+		min-height: 300px !important;
+	}
+	.parallax-one .cover-text{
+		top:20%;
+	}
+	.my-footer{
+		position: static !important;
+	}
+	.main-content{
+		margin-bottom: 0 !important;
+	}
+}
+/*=================================
+		NAVBAR STYLES
+===================================*/
+#my-nav{
+	background: #fff;	
+	margin-bottom: 0;
+	position: fixed;
+	z-index:1;
+	width: 100%;
+}
+
+#my-nav ul>li.active a{
+	background-color : #fff;
+}
+#my-nav li a{
+	color:#000;
+	font-weight: bold;
+	font-family: tahoma;
+}
+
+/*=================================
+		COVER PIC STYLES
+===================================*/
+.cover-pic{
+	position: relative;
+	background-image: url("images/cover-pic.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.8;
+}
+.cover-text{
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.cover-text h1{
+	font-weight: bold;
+}
+.cover-text h3{
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.cover-text .btn{
+	color:#fff;
+	font-family: impact;
+	margin-right: 15px;
+}
+#explore-btn{
+	transition: background-color 0.5s ease;
+	background: #D50000;
+}
+#explore-btn:hover{
+	background-color: #FF3D00;
+	color:#000;
+}
+#buy-btn{
+	transition: background-color 0.5s ease;
+	background: transparent;
+	border:2px solid #fff;
+}
+/*=================================
+		COMMON STYLES
+===================================*/
+
+.my-header h1{
+	font-weight: bold;
+}
+.head-border{
+	border-bottom: 5px solid #ddd;
+	display: block;
+	width:190px;
+	margin:0 auto;
+} 
+.text-center{
+	text-align: center;
+}
+.text-content{
+	margin-top:40px;
+}
+.text-content p{
+	word-spacing: 10px;
+	line-height: : 5px;
+	color: grey;
+	
+}
+.trans-btn:hover{
+	background-color : #fff !important;
+	color: #000;
+}
+
+/*=================================
+		ABOUT US STYLES
+===================================*/
+
+.my-boxes .col-md-4{
+	margin-bottom: 10px;
+}
+.my-boxes img{
+	margin-top:30px;
+}
+.my-boxes .box{
+	background-color: #81D4FA;
+	height:350px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.my-boxes .box:hover{
+	transition: background-color 0.5s ease;
+	background:#03A9F4;
+}
+.my-boxes h3{
+	font-weight: bold;
+
+}
+.my-boxes p{
+	line-height: 35px;
+	padding: 5px;
+}
+
+/*=================================
+		PARALLAX EFFECTS
+===================================*/
+.parallax{
+    min-height: 500px;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.parallax-one{
+	 background-image: url("images/parallax-one.jpg");
+}
+.parallax-two{
+	background-image: url("images/parallax-two.jpg");
+}
+.parallax-three{
+	background-image: url("images/parallax-three.jpg");
+}
+.parallax-two .container{
+	padding-top:75px;
+}
+.parall-btn{
+	transition: background-color 0.5s ease;
+	border: 2px solid #fff;
+	background-color: transparent;
+	margin-top: 20px;
+}
+.parallax-box{
+	transition: background-color 0.5s ease;
+	height: 350px;
+	background-color: #000;
+	opacity:0.8;
+}
+.parallax-box:hover{
+	background: #03A9F4;
+}
+.parallax-box img{
+	padding-top: 20px;
+}
+.parallax-two .col-md-4{
+	margin-bottom: 10px;
+}
+.parallax-box .box-head h4{
+	color:#fff;
+}
+.parallax-box .box-desc{
+	padding: 25px;
+	color: #fff;
+	font-size: 16px;
+}
+.parallax-box .box-line{
+	border: 2px solid yellow;
+	display: block;
+	width: 100px;
+	border-radius: 10px;
+	border-top-left-radius: 5px;
+	margin: 0 auto;
+}
+
+/*=================================
+		SERVICES STYLES
+===================================*/
+
+.service-boxes .col-md-4{
+	margin-bottom:10px;
+}
+.service-boxes .box{
+	height: 400px;
+	background: #fff;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.service-boxes .box:hover{
+	background: #FAFAFA;
+}
+.service-boxes .box .service-head{
+	padding: 30px;
+	font-weight: bold;
+	font-size: 25px;
+}
+.service-boxes #head-one{
+	color: #03A9F4;
+}
+.service-boxes #head-two{
+	color: #8BC34A;
+}
+.service-boxes #head-three{
+	color: #FFC107;
+}
+.service-boxes .box-text{
+	line-height: 30px;
+	padding: 5px;
+}
+/*=================================
+		SERVICES STYLES
+===================================*/
+.works-menu{
+	margin-top:60px;
+}
+.works-menu .pill-list li{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.works-menu .pill-list li a{
+	text-decoration: none;
+	padding: 9px 13px 9px;
+	line-height: 18px;
+	font-size: 16px;
+}
+.portfolio-grid{
+	margin-top:30px;
+}
+.portfolio-grid .img-rounded{
+	border-radius: 15px;
+}
+
+.overlay{
+	position: relative;
+}
+.overlay .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay:hover .overlay-img {
+  opacity: 0.3;
+}
+
+.overlay:hover .middle {
+  opacity: 1;
+}
+
+.overlay .text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 30px;
+  padding: 16px 32px;
+  border-radius: 50%;
+
+}
+.overlay h3{
+	font-weight: bold;
+	font-family: forte;
+}
+
+/*=================================
+		CONTACT US STYLES
+===================================*/
+
+.contact-us-section .my-header{
+	color: #fff;
+}
+.contact-details{
+	margin-top:40px;
+	color: #fff;
+	margin-bottom:30px;
+}
+.contact-details h4{
+	line-height: 30px;
+	font-weight: bold;
+}
+.contact-form textarea.form-control{
+	height: auto;
+}
+.contact-form button.submit{
+	background: #F44336;
+	font-size: 14px;
+	font-weight: bold;
+}
+.my-footer{
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	width: 100%;
+	padding: 100px 0 50px 0;
+}
+/*=================================
+		FOOTER STYLES
+===================================*/	
+.main-content{
+	position: relative;
+	z-index: 100;
+	background: #fff;
+	margin-bottom:600px;
+}
+.my-footer .tags a{
+	background: #414141;
+	color:#fff;
+	margin-top:5px;
+}
+.my-footer .tags a:hover{
+	background:#D50000;
+}
+.my-footer .footer-title,.my-footer p{
+	color: #fff;
+}
+.my-footer p{
+	text-align: justify;
+	color: #d4d4d4;
+}
+.my-footer .form-control{
+	background: transparent;
+	color: #fff;
+	height: 50px;
+}
+.margin-one{
+	margin-top:30px;
+}
+.margin-two{
+	margin-top:20px;
+}
+.my-footer .copyright-section {
+    font-size: 14px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #414141;
+}
+.copyright-section p{
+	text-align: center !important;
+}
